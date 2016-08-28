@@ -14,7 +14,7 @@ requirements = [
 ]
 
 test_requirements = [
-    # TODO: put package test requirements here
+    'pytest',
 ]
 
 setup(
@@ -49,5 +49,8 @@ setup(
         'Programming Language :: Python :: 3.5',
     ],
     test_suite='tests',
+    setup_requires=[
+        'pytest-runner',
+    ],
     tests_require=test_requirements
 )
